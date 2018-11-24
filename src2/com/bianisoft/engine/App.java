@@ -126,6 +126,9 @@ public class App implements GLEventListener{
 		m_objFrame.setVisible(true);
 		m_objCanvas.requestFocus();
 		m_objAnimator.start();
+        
+        
+	    load();
 	}
 
 	public App(Applet p_objApplet, GLCanvas p_objCanvas, Animator p_objAnimator, int p_nWidth, int p_nHeight){
@@ -248,6 +251,10 @@ public class App implements GLEventListener{
 
 		Random.setSeed((int)System.nanoTime());
 	}
+
+    public void load(){
+        
+    }
 
 	public void addContext(Context p_ctx){
 		Context pTemp= p_ctx;
