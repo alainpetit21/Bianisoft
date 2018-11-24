@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Bianisoft" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Bianisoft.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+	<target name="-post-jar">
+		<copy todir="../../Libs/Bianisoft">
+			<fileset dir="${dist.jar.dir}">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+	</target>
+</project>
